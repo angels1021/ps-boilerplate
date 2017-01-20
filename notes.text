@@ -1,0 +1,31 @@
+what belongs in our starter kit:
+
+1. package manager:
+    yarn
+
+2. bundling, minification, transpiling:
+    webpack
+
+3. Dynamic HTML Generation
+    React
+
+4. centralized HTTP
+
+5. Mock API framework
+
+6. Component libraries
+
+7. Dev server
+
+8. Linting:
+    Eslint
+
+9. Automated testing
+
+10. continuous integration
+
+11. Automated build
+
+12. Automated deployment
+
+13. Working example app
