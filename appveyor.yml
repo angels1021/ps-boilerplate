@@ -4,20 +4,20 @@ environment:
   # node.js
   - nodejs_version: "7"
 
-  #install scripts. (runs after repo cloning)
-  install:
-    # Get the latest sable versionof node.js or io.js
-    - ps: Install-Product node $env:nodejs_version
-    # install modules
-    - npm install
+#install scripts. (runs after repo cloning)
+install:
+  # Get the latest sable version of node.js or io.js
+  - ps: Install-Product node $env: nodejs_version
+  # install modules
+  - npm install
 
-  # Post install test scripts
-  test_scripts:
-    # Output useful info for debugging
-    - node --version
-    - npm --version
-    # run tests
-    - npm test
+# Post install test scripts
+test_scripts:
+  # Output useful info for debugging
+  - node --version
+  - npm --version
+  # run tests
+  - npm test
 
-  #don't actually build.
-  build: off
+#don't actually build.
+build: off
