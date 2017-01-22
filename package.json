@@ -8,11 +8,13 @@
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check open:dev lint:watch",
+    "start": "npm-run-all --parallel security-check open:dev lint:watch test:watch",
     "open:dev": "babel-node buildScripts/devServer.js",
     "security-check": "nsp check",
     "lint": "esw webpack.config.* src buildScripts --color",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:watch": "npm run lint -- --watch",
+    "test": "mocha --reporter spec buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
     "whatwg-fetch": "1.0.0"
