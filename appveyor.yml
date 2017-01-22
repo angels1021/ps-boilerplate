@@ -9,7 +9,7 @@ environment:
     # Get the latest sable versionof node.js or io.js
     - ps: Install-Product node $env:nodejs_version
     # install modules
-    - yarn install
+    - npm install
 
   # Post install test scripts
   test_scripts:
