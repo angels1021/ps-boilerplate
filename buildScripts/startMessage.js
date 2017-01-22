@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import chalk from 'chalk';
 
-console.log('starting dev server'.blue);
+console.log(chalk.blue('starting dev server'));

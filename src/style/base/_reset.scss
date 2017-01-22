@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  color: $colorText;
+}
+
+h1 {
+  color: deeppink;
+}
+

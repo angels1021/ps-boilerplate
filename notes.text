@@ -35,4 +35,7 @@ what belongs in our starter kit:
 node security check - node security project
 on npm start
 
+
+share local
 * browsersync - multi devices
+ngrok/localtunnel - local address
