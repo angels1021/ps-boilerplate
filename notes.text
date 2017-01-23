@@ -39,3 +39,16 @@ on npm start
 share local
 * browsersync - multi devices
 ngrok/localtunnel - local address
+
+_________________
+polyfill.io
+
+_________________
+JSON schema faker
+- faker.js
+- chance.js
+- regexp.js
+
+JSON server
+
+

@@ -18,6 +18,16 @@ app.use(webpackDevMiddle(compiler, {
 
 app.use(webpackHotMiddle(compiler));
 
+/* eslint-disable quote-props */
+app.get('/users', (req, res) => {
+  res.json([
+    { "id": 1, "firstName": "Tom", "lastName": "Fletcher", "email": "t_bag@mcfly.com" },
+    { "id": 2, "firstName": "Danny", "lastName": "Jones", "email": "moosh@mcfly.com" },
+    { "id": 3, "firstName": "Harry", "lastName": "Judd", "email": "moosh.2@mcfly.com" },
+    { "id": 4, "firstName": "Dougie", "lastName": "Poynter", "email": "doug@mcfly.com" }
+  ]);
+});
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../src/index.html'));
 });
@@ -27,6 +37,6 @@ app.listen(PORT, (err) => {
     console.log('error', err);
   } else {
     console.log(`app listening on port ${PORT}`);
-    open(`http://localhost: ${PORT}`);
+    open(`http://localhost:${PORT}`);
   }
 });
